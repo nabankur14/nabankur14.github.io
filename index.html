@@ -1,52 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nabankur Ray | Data Scientist Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabankur | Data Scientist Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Nabankur, a Data Scientist specializing in Python, Machine Learning, and Tableau.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>👋 Hi, I'm Nabankur Ray</h1>
-    <p>Data Scientist | Business Analytics | Machine Learning Enthusiast</p>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="projects.html">Projects</a> |
-      <a href="about.html">About</a> |
-      <a href="contact.html">Contact</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Nabankur<span>.</span></a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#articles">Articles</a>
+                <div class="social-nav">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-medium"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                </div>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section id="intro">
-    <img src="assets/images/profile_photo.jpg" alt="Nabankur Ray" width="160" style="border-radius: 50%;" />
-    <p>
-      I'm a data-driven problem solver passionate about turning data into actionable business insights.
-      With a postgraduate degree in Data Science and Business Analytics from Great Lakes and UT Austin, and 
-      an M.Sc. in Data Science from Deakin University, I combine analytics and strategy to drive business impact.
-    </p>
-  </section>
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="overlay"></div>
+        <div class="container hero-content hidden">
+            <h1 class="fade-in">Hi, I'm <span class="gradient-text">Nabankur Ray</span></h1>
+            <p class="fade-in delay-100">Data Scientist | Business Analytics | Machine Learning Enthusiast</p>
+            <div class="hero-btns fade-in delay-200">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#about" class="btn btn-secondary">More About Me</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
 
-  <section id="projects">
-    <h2>📊 Featured Projects</h2>
-    <ul>
-      <li><a href="https://github.com/nabankur14/Project_01_Default_Prediction_Risk_Analysis">Default Prediction & Stock Risk Analysis</a></li>
-      <li><a href="https://github.com/nabankur14/Project_02_Wine_Sales_Forecasting">Wine Sales Forecasting</a></li>
-      <li><a href="https://github.com/nabankur14/Project_05_EasyVisa_ML_Model">Visa Approval Prediction</a></li>
-      <li><a href="https://github.com/nabankur14/Project_07_ShowTime_OTT_Analysis">OTT Viewership Regression Analysis</a></li>
-    </ul>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Nabankur in a Nutshell</h2>
+            <div class="about-grid">
+                <div class="about-text hidden-left">
+                    <p>Passionate Data Scientist with strong foundations in <strong>Machine Learning, Business
+                            Analytics, and Statistical Modeling</strong>. Experienced in analyzing real-world business
+                        data across Finance, Marketing, Retail, and Risk Analytics.</p>
+                    <p>My expertise includes <strong>EDA, Predictive Modeling, Time Series Forecasting, Segmentation,
+                            and Hypothesis Testing</strong>. I love turning complex data into actionable insights,
+                        dashboards, and predictive models.</p>
+                    <div class="skills-tags">
+                        <span>Machine Learning</span>
+                        <span>Supervised Learning</span>
+                        <span>Unsupervised Learning</span>
+                        <span>EDA</span>
+                        <span>Predictive Modeling</span>
+                        <span>Time Series Forecasting</span>
+                        <span>Segmentation</span>
+                        <span>Hypothesis Testing</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Tableau</span>
+                        <span>Power BI</span>
+                        <span>Streamlit</span>
+                    </div>
+                </div>
+                <div class="about-img hidden-right">
+                    <img src="assets/nabankur_profile.jpg" alt="Nabankur Ray">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>📫 Contact</h2>
-    <p>Email: <a href="mailto:ray.nabankur@gmail.com">ray.nabankur@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/nabankur-ray-876582181/">linkedin.com/in/nabankur-ray-876582181</a></p>
-    <p>GitHub: <a href="https://github.com/nabankur14">github.com/nabankur14</a></p>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Some Things I’ve Worked On</h2>
+            
+            <!-- Python Projects -->
+            <h3 class="subsection-title">Projects using Python</h3>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card hidden-up">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1611974765270-ca12586343bb?q=80&w=1000&auto=format&fit=crop');">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Default Prediction & Stock Risk</h3>
+                        <p>Predicts company default risk and analyzes market volatility using ML and financial metrics.
+                        </p>
+                        <div class="card-links">
+                            <a href="https://github.com/nabankur14/finance-retail-analytics-using-python"
+                                target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
 
-  <footer>
-    <p>© 2025 Nabankur Ray. All Rights Reserved.</p>
-  </footer>
+                <!-- Project 2 -->
+                <div class="project-card hidden-up delay-100">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1000&auto=format&fit=crop');">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cafe Sales – Market Basket Analysis</h3>
+                        <p>Uncovered customer purchase patterns and profitable combos using Python (EDA) and KNIME.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/nabankur14/Cafe-Sales-Analytics-Market-Basket-Analysis"
+                                target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card hidden-up delay-200">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1540390769625-2fc3f8b1d50c?q=80&w=1000&auto=format&fit=crop');">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Visa Approval Classification</h3>
+                        <p>Predicts visa approvals using ensemble Machine Learning models.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/nabankur14/visa-approval-classification-using-machine-learning"
+                                target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card hidden-up">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop');">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Inferential Analysis Marketing</h3>
+                        <p>Applied ANOVA, Chi-Square & Hypothesis Testing for key marketing insights.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/nabankur14/Inferential_Analysis_Marketing_Insights"
+                                target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card hidden-up delay-100">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1000&auto=format&fit=crop');">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Automobile Customer Analytics</h3>
+                        <p>Analyzed car sales & customer patterns to derive actionable business strategies.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/nabankur14/automobile-sales-data-insights" target="_blank"
+                                class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card hidden-up delay-200">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop');">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel Booking Cancellation</h3>
+                        <p>Predict booking cancellation using Logistic Regression, KNN, and Decision Trees.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/nabankur14/hotel-booking-cancellation-prediction-model"
+                                target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 (Moved here) -->
+                <div class="project-card hidden-up delay-100">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=1000&auto=format&fit=crop');">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>AllLife Bank Segmentation</h3>
+                        <p>Clustered customers using K-Means & Hierarchical models for targeted marketing.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/nabankur14/credit-card-customer-segmentation-using-machine-learning"
+                                target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tableau Projects -->
+            <h3 class="subsection-title">Tableau Projects</h3>
+            <div class="project-grid">
+                <!-- Project 7 -->
+                <div class="project-card hidden-up">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop');">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Car Insurance Claims (Tableau)</h3>
+                        <p>Tableau dashboard analyzing car insurance claim patterns and regional risk trends.</p>
+                        <div class="card-links">
+                            <a href="https://public.tableau.com/app/profile/nabankur.ray1543/viz/CarInsuranceClaimsAnalysis_17385197978260/CarInsuranceClaimsAnalysisbyNabankur"
+                                target="_blank" class="btn-sm"><i class="fas fa-chart-bar"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="cert-grid">
+                <!-- 1. GL PGP -->
+                <div class="cert-item hidden-up">
+                    <img src="assets/cert_gl_pgp.jpg" alt="GL PGP Certificate" class="cert-img">
+                    <div class="cert-content">
+                        <h3>Post Graduate Program in Data Science & Business Analytics</h3>
+                        <a href="https://www.mygreatlearning.com/certificate/RRPGFHVD" target="_blank"
+                            class="btn-sm">View Credential</a>
+                    </div>
+                </div>
+
+                <!-- 2. UT Austin PGP -->
+                <div class="cert-item hidden-up delay-100">
+                    <img src="assets/cert_ut_austin.png" alt="UT Austin PGP Certificate" class="cert-img">
+                    <div class="cert-content">
+                        <h3>PGP in Data Science and Business Analytics (UT Austin)</h3>
+                        <a href="https://la.utexas.edu/texasexeced/digitalVerification.html?key=zjogtflt"
+                            target="_blank" class="btn-sm">View Credential</a>
+                    </div>
+                </div>
+
+                <!-- 3. Big Data Analytics -->
+                <div class="cert-item hidden-up delay-200">
+                    <img src="assets/cert_big_data.png" alt="Big Data Analytics Certificate" class="cert-img">
+                    <div class="cert-content">
+                        <h3>Mastering Big Data Analytics</h3>
+                        <a href="https://www.mygreatlearning.com/certificate/QLYPOOOR" target="_blank"
+                            class="btn-sm">View Credential</a>
+                    </div>
+                </div>
+
+                <!-- 4. Generative AI -->
+                <div class="cert-item hidden-up">
+                    <img src="assets/cert_gen_ai.png" alt="Generative AI Certificate" class="cert-img">
+                    <div class="cert-content">
+                        <h3>Generative AI Course</h3>
+                        <a href="https://www.mygreatlearning.com/certificate/QNWGKEAV" target="_blank"
+                            class="btn-sm">View Credential</a>
+                    </div>
+                </div>
+
+                <!-- 5. Accenture Analytics -->
+                <div class="cert-item hidden-up delay-100">
+                    <img src="assets/cert_accenture.png" alt="Accenture Analytics Certificate" class="cert-img">
+                    <div class="cert-content">
+                        <h3>Accenture Data Analytics and Visualization</h3>
+                        <a href="#" class="btn-sm" style="opacity: 0.7; cursor: default;">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2 class="section-title">Articles</h2>
+            <div class="article-container">
+                <div class="article-card hidden-left">
+                    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1000&auto=format&fit=crop"
+                        alt="Women in Tech">
+                    <div class="article-content">
+                        <h3>Why aren’t there more women in data science?</h3>
+                        <p>Exploring the diversity gap in the tech industry and data fields.</p>
+                        <a href="#" class="btn-text">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="article-card hidden-right">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop"
+                        alt="World Data">
+                    <div class="article-content">
+                        <h3>How to change the world with data science?</h3>
+                        <p>Using data for social good and impactful decision making.</p>
+                        <a href="#" class="btn-text">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <h3>"Data is not just numbers — it’s a story waiting to be told."</h3>
+            <div class="social-icons">
+                <a href="https://github.com/nabankur14" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nabankur-ray-876582181/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:ray.nabankur@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/saunmkie/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Nabankur. Built with <i class="fas fa-heart"></i> and Code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
