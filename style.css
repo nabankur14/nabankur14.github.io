@@ -345,6 +345,292 @@ img {
     border: 1px solid rgba(56, 189, 248, 0.2);
 }
 
+/* Badge Box Card (Image 4 Design) */
+.badge-box-card {
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    padding: 1.5rem;
+    max-width: 320px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    user-select: none;
+}
+
+.badge-box-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-primary);
+    background: rgba(56, 189, 248, 0.06);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.18);
+}
+
+.badge-box-img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.badge-box-img {
+    height: 110px;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.4));
+    transition: transform 0.3s ease;
+}
+
+.badge-box-card:hover .badge-box-img {
+    transform: scale(1.06);
+}
+
+.badge-box-content {
+    margin-top: 1rem;
+}
+
+.badge-box-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.35;
+    margin-bottom: 0.3rem;
+}
+
+.badge-box-org {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+}
+
+.badge-box-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+}
+
+.badge-box-expiry {
+    color: var(--text-secondary);
+}
+
+.badge-box-status {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    padding: 0.25rem 0.65rem;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* Badge Modal Pop-Up (Images 1, 2, 3 Design) */
+.badge-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.badge-modal-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.badge-modal-container {
+    background: #ffffff;
+    color: #1e293b;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 680px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: scale(0.95) translateY(15px);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+}
+
+.badge-modal-backdrop.active .badge-modal-container {
+    transform: scale(1) translateY(0);
+}
+
+.badge-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem 1rem 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.badge-modal-header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.badge-modal-close {
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #64748b;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    line-height: 1;
+}
+
+.badge-modal-close:hover {
+    color: #0f172a;
+    background: #f1f5f9;
+}
+
+.badge-modal-body {
+    padding: 1.5rem 2rem 2rem 2rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.badge-modal-inner-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1.8rem;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.modal-badge-center-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.modal-badge-center-img img {
+    height: 110px;
+    object-fit: contain;
+}
+
+.badge-field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.badge-field-label {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #64748b;
+}
+
+.badge-field-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0f172a;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.badge-field-value.title-large {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.badge-field-value.description-text {
+    font-size: 0.93rem;
+    font-weight: 400;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.badge-field-link {
+    font-size: 0.88rem;
+    color: #4f46e5;
+    word-break: break-all;
+    text-decoration: underline;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.badge-field-link:hover {
+    color: #4338ca;
+}
+
+.verification-tag-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fcd34d;
+    padding: 0.35rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.verification-tag-pill.verified-green {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+.verification-help-text {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 0.3rem;
+    line-height: 1.5;
+}
+
+.badge-skills-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.4rem;
+}
+
+.badge-skill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid #047857;
+    color: #047857;
+    background: #ecfdf5;
+    padding: 0.45rem 0.85rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.badge-skill-tag i {
+    font-size: 0.85rem;
+    color: #059669;
+}
+
 .about-img img {
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
