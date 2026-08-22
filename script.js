@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Badge Details Modal Logic
+    // Badge Details Modal Logic (Oracle)
     const openBadgeBtn = document.getElementById('open-badge-modal');
     const badgeModalBackdrop = document.getElementById('badge-modal-backdrop');
     const closeBadgeBtn = document.getElementById('close-badge-modal');
@@ -99,6 +99,55 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && badgeModalBackdrop && badgeModalBackdrop.classList.contains('active')) {
             closeBadgeModal();
+        }
+    });
+
+    // Badge Details Modal Logic (Google AI Essentials)
+    const openGoogleBadgeBtn = document.getElementById('open-google-badge-modal');
+    const googleBadgeModalBackdrop = document.getElementById('google-badge-modal-backdrop');
+    const closeGoogleBadgeBtn = document.getElementById('close-google-badge-modal');
+
+    function openGoogleBadgeModal() {
+        if (googleBadgeModalBackdrop) {
+            googleBadgeModalBackdrop.classList.add('active');
+            googleBadgeModalBackdrop.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeGoogleBadgeModal() {
+        if (googleBadgeModalBackdrop) {
+            googleBadgeModalBackdrop.classList.remove('active');
+            googleBadgeModalBackdrop.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+    }
+
+    if (openGoogleBadgeBtn) {
+        openGoogleBadgeBtn.addEventListener('click', openGoogleBadgeModal);
+        openGoogleBadgeBtn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openGoogleBadgeModal();
+            }
+        });
+    }
+
+    if (closeGoogleBadgeBtn) {
+        closeGoogleBadgeBtn.addEventListener('click', closeGoogleBadgeModal);
+    }
+
+    if (googleBadgeModalBackdrop) {
+        googleBadgeModalBackdrop.addEventListener('click', (e) => {
+            if (e.target === googleBadgeModalBackdrop) {
+                closeGoogleBadgeModal();
+            }
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && googleBadgeModalBackdrop && googleBadgeModalBackdrop.classList.contains('active')) {
+            closeGoogleBadgeModal();
         }
     });
 

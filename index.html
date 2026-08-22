@@ -104,17 +104,38 @@
             <span>Tableau & Power BI</span>
             <span>Azure Cloud Services</span>
           </div>
-          <!-- Oracle Badge Card -->
-          <div class="badge-box-card" id="open-badge-modal" role="button" tabindex="0" title="Click to view badge details">
-            <div class="badge-box-img-wrap">
-              <img src="assets/certificates/cert_oracle_badge.png" alt="Oracle Certified Agentic AI 2026 Badge" class="badge-box-img">
+          <div class="badge-cards-container">
+            <!-- Oracle Badge Card -->
+            <div class="badge-box-card" id="open-badge-modal" role="button" tabindex="0"
+              title="Click to view badge details">
+              <div class="badge-box-img-wrap">
+                <img src="assets/certificates/cert_oracle_badge.png" alt="Oracle Certified Agentic AI 2026 Badge"
+                  class="badge-box-img">
+              </div>
+              <div class="badge-box-content">
+                <h4 class="badge-box-title">Agentic AI Certified Foundations Associate</h4>
+                <p class="badge-box-org">Oracle</p>
+                <div class="badge-box-footer">
+                  <span class="badge-box-expiry">Expires Aug 16, 2028</span>
+                  <span class="badge-box-status"><i class="fas fa-check-circle"></i> Verified</span>
+                </div>
+              </div>
             </div>
-            <div class="badge-box-content">
-              <h4 class="badge-box-title">Agentic AI Certified Foundations Associate</h4>
-              <p class="badge-box-org">Oracle</p>
-              <div class="badge-box-footer">
-                <span class="badge-box-expiry">Expires Aug 16, 2028</span>
-                <span class="badge-box-status"><i class="fas fa-check-circle"></i> Verified</span>
+
+            <!-- Google AI Essentials Badge Card -->
+            <div class="badge-box-card" id="open-google-badge-modal" role="button" tabindex="0"
+              title="Click to view badge details">
+              <div class="badge-box-img-wrap">
+                <img src="assets/certificates/google-ai-essentials-v1-Badge.png" alt="Google AI Essentials Badge"
+                  class="badge-box-img">
+              </div>
+              <div class="badge-box-content">
+                <h4 class="badge-box-title">Google AI Essentials V1</h4>
+                <p class="badge-box-org">Coursera</p>
+                <div class="badge-box-footer">
+                  <span class="badge-box-expiry">No Expiry</span>
+                  <span class="badge-box-status"><i class="fas fa-check-circle"></i> Verified</span>
+                </div>
               </div>
             </div>
           </div>
@@ -678,16 +699,29 @@
           <img src="assets/certificates/cert_rag.png" alt="RAG Certificate" class="cert-img">
           <div class="cert-content">
             <h3>End-to-end RAG Application Development with LangChain and Streamlit</h3>
-            <a href="#" target="_blank" class="btn-sm">Verified</a>
+            <a href="assets/certificates/cert_rag.png" target="_blank" class="btn-sm">Verified</a>
           </div>
         </div>
 
         <!-- 8. Oracle Certified Foundations Associate - Agentic AI -->
         <div class="cert-item hidden-up delay-200">
-          <img src="assets/certificates/Cert_Oracle_AI_Agent.png" alt="Oracle Certified Foundations Associate - Agentic AI Certificate" class="cert-img">
+          <img src="assets/certificates/Cert_Oracle_AI_Agent.png"
+            alt="Oracle Certified Foundations Associate - Agentic AI Certificate" class="cert-img">
           <div class="cert-content">
             <h3>Oracle Certified Foundations Associate — Agentic AI</h3>
             <a href="assets/certificates/Cert_Oracle_AI_Agent.png" target="_blank" class="btn-sm">View Credential</a>
+          </div>
+        </div>
+
+        <!-- 9. Google AI Essentials -->
+        <div class="cert-item hidden-up delay-200">
+          <img src="assets/certificates/cert_google_ai_essentials.png" alt="Google AI Essentials Certificate"
+            class="cert-img">
+          <div class="cert-content">
+            <h3>Google AI Essentials V1</h3>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/N2HPER201XUU" target="_blank"
+              class="btn-sm">View
+              Credential</a>
           </div>
         </div>
 
@@ -741,94 +775,201 @@
       </div>
       <p class="copyright">&copy; 2026 Nabankur Ray. Built with <i class="fas fa-heart"></i> and Code.</p>
     </div>
-  <!-- Badge Details Modal Pop-Up -->
-  <div id="badge-modal-backdrop" class="badge-modal-backdrop" aria-hidden="true">
-    <div class="badge-modal-container" role="dialog" aria-labelledby="modal-title" aria-modal="true">
-      <div class="badge-modal-header">
-        <h3 id="modal-title">Badge Details</h3>
-        <button id="close-badge-modal" class="badge-modal-close" aria-label="Close modal">&times;</button>
-      </div>
-      <div class="badge-modal-body">
-        <div class="badge-modal-inner-card">
-          <div class="modal-badge-center-img">
-            <img src="assets/certificates/cert_oracle_badge.png" alt="Oracle Certified Agentic AI 2026 Badge">
-          </div>
 
-          <div class="badge-field-group">
-            <label class="badge-field-label">Badge Title</label>
-            <h4 class="badge-field-value title-large">Agentic AI Certified Foundations Associate</h4>
-          </div>
-
-          <div class="badge-field-group">
-            <label class="badge-field-label">Issuing Organization</label>
-            <p class="badge-field-value">Oracle</p>
-          </div>
-
-          <div class="badge-field-group">
-            <label class="badge-field-label">Issued To</label>
-            <p class="badge-field-value">Nabankur Ray</p>
-          </div>
-
-          <div class="badge-field-group">
-            <label class="badge-field-label">Description</label>
-            <p class="badge-field-value description-text">
-              A practical, build-it-yourself introduction to AI agents. The earner will leave understanding what an agent really is having built one from scratch, used LangChain, the OpenAI Agents SDK, a real MCP server, and seen where agents run in production using OCI Enterprise AI Agents service and Agentic AI features in the Oracle AI Database. The teaching is from first principles: the why, not just the how.
-            </p>
-          </div>
-
-          <div class="badge-field-group">
-            <label class="badge-field-label">Issuing Date</label>
-            <p class="badge-field-value">8/16/2026</p>
-          </div>
-
-          <div class="badge-field-group">
-            <label class="badge-field-label">Expiration Date</label>
-            <p class="badge-field-value">8/16/2028</p>
-          </div>
-
-          <div class="badge-field-group">
-            <label class="badge-field-label">Credential URL</label>
-            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=B781A9CBD9064964EA5A4BF92075FE7E0D6983BC42AD2D4B452CF7422032FBFE" target="_blank" rel="noopener noreferrer" class="badge-field-link">
-              https://catalog-education.oracle.com/ords/certview/sharebadge?id=B781A9CBD9064964EA5A4BF92075FE7E0D6983BC42AD2D4B452CF7422032FBFE
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="badge-field-group">
-            <label class="badge-field-label">Verification Status</label>
-            <div>
-              <span class="verification-tag-pill verified-green"><i class="fas fa-check-circle"></i> Verified Credential</span>
+    <!-- Oracle Badge Details Modal Pop-Up -->
+    <div id="badge-modal-backdrop" class="badge-modal-backdrop" aria-hidden="true">
+      <div class="badge-modal-container" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+        <div class="badge-modal-header">
+          <h3 id="modal-title">Badge Details</h3>
+          <button id="close-badge-modal" class="badge-modal-close" aria-label="Close modal">&times;</button>
+        </div>
+        <div class="badge-modal-body">
+          <div class="badge-modal-inner-card">
+            <div class="modal-badge-center-img">
+              <img src="assets/certificates/cert_oracle_badge.png" alt="Oracle Certified Agentic AI 2026 Badge">
             </div>
-            <p class="verification-help-text">
-              Issued and verified directly by Oracle University. Official credential records can be verified online using the Oracle link provided above.
-            </p>
-          </div>
 
-          <div class="badge-field-group">
-            <label class="badge-field-label">Skills <i class="fas fa-info-circle" style="margin-left: 0.2rem;" title="Verified Skills"></i></label>
-            <div class="badge-skills-flex">
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> AI Agents</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Artificial Intelligence (AI)</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Intelligence</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Langchain</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> OpenAI API</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Operational Intelligence (OI)</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Oracle Database (Oracle)</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Understand core AI agent concepts</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Build agents using LangChain</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Apply Model Context Protocol concepts</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Use OpenAI agent development capabilities</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Use OCI Enterprise AI Agents</span>
-              <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Apply Oracle AI Database capabilities for agentic AI</span>
+            <div class="badge-field-group">
+              <label class="badge-field-label">Badge Title</label>
+              <h4 class="badge-field-value title-large">Agentic AI Certified Foundations Associate</h4>
             </div>
-          </div>
 
+            <div class="badge-field-group">
+              <label class="badge-field-label">Issuing Organization</label>
+              <p class="badge-field-value">Oracle</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Issued To</label>
+              <p class="badge-field-value">Nabankur Ray</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Description</label>
+              <p class="badge-field-value description-text">
+                A practical, build-it-yourself introduction to AI agents. The earner will leave understanding what an
+                agent really is having built one from scratch, used LangChain, the OpenAI Agents SDK, a real MCP server,
+                and seen where agents run in production using OCI Enterprise AI Agents service and Agentic AI features
+                in the Oracle AI Database. The teaching is from first principles: the why, not just the how.
+              </p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Issuing Date</label>
+              <p class="badge-field-value">8/16/2026</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Expiration Date</label>
+              <p class="badge-field-value">8/16/2028</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Credential URL</label>
+              <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=B781A9CBD9064964EA5A4BF92075FE7E0D6983BC42AD2D4B452CF7422032FBFE"
+                target="_blank" rel="noopener noreferrer" class="badge-field-link">
+                https://catalog-education.oracle.com/ords/certview/sharebadge?id=B781A9CBD9064964EA5A4BF92075FE7E0D6983BC42AD2D4B452CF7422032FBFE
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Verification Status</label>
+              <div>
+                <span class="verification-tag-pill verified-green"><i class="fas fa-check-circle"></i> Verified
+                  Credential</span>
+              </div>
+              <p class="verification-help-text">
+                Issued and verified directly by Oracle University. Official credential records can be verified online
+                using the Oracle link provided above.
+              </p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Skills <i class="fas fa-info-circle" style="margin-left: 0.2rem;"
+                  title="Verified Skills"></i></label>
+              <div class="badge-skills-flex">
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> AI Agents</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Artificial Intelligence (AI)</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Intelligence</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Langchain</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> OpenAI API</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Operational Intelligence (OI)</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Oracle Database (Oracle)</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Understand core AI agent
+                  concepts</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Build agents using LangChain</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Apply Model Context Protocol
+                  concepts</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Use OpenAI agent development
+                  capabilities</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Use OCI Enterprise AI Agents</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Apply Oracle AI Database capabilities
+                  for agentic AI</span>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <!-- Google AI Badge Details Modal Pop-Up -->
+    <div id="google-badge-modal-backdrop" class="badge-modal-backdrop" aria-hidden="true">
+      <div class="badge-modal-container" role="dialog" aria-labelledby="google-modal-title" aria-modal="true">
+        <div class="badge-modal-header">
+          <h3 id="google-modal-title">Badge Details</h3>
+          <button id="close-google-badge-modal" class="badge-modal-close" aria-label="Close modal">&times;</button>
+        </div>
+        <div class="badge-modal-body">
+          <div class="badge-modal-inner-card">
+            <div class="modal-badge-center-img">
+              <img src="assets/certificates/google-ai-essentials-v1-Badge.png" alt="Google AI Essentials Badge">
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Badge Title</label>
+              <h4 class="badge-field-value title-large">Google AI Essentials V1</h4>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Issuing Organization</label>
+              <p class="badge-field-value">Coursera</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Issued To</label>
+              <p class="badge-field-value">Nabankur Ray</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Description</label>
+              <p class="badge-field-value description-text">
+                Those who earn the Google AI Essentials Certificate, developed by Google, have completed five courses on
+                the use of AI in the workplace. They know how to use generative AI tools to help develop ideas and
+                content, make more informed decisions, and speed up daily work tasks. They also know how to use AI
+                responsibly by identifying AI's potential biases and avoiding harm.
+              </p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Issuing Date</label>
+              <p class="badge-field-value">8/22/2026</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Expiration Date</label>
+              <p class="badge-field-value">This credential does not expire</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Credential ID</label>
+              <p class="badge-field-value">e10478bc-96f8-4ef9-baf1-24bf363411b6</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Credential URL</label>
+              <a href="https://www.credly.com/badges/e10478bc-96f8-4ef9-baf1-24bf363411b6/public_url" target="_blank"
+                rel="noopener noreferrer" class="badge-field-link">
+                See Badge Details Page
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Verification Status</label>
+              <div>
+                <span class="verification-tag-pill verified-green"><i class="fas fa-check-circle"></i> Verified
+                  Credential</span>
+              </div>
+              <p class="verification-help-text">
+                Issued and verified directly by Coursera. Official credential records can be verified online using the
+                link provided above.
+              </p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Skills <i class="fas fa-info-circle" style="margin-left: 0.2rem;"
+                  title="Verified Skills"></i></label>
+              <div class="badge-skills-flex">
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Critical Thinking</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Problem Solving</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Prompt Engineering</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Augment tasks with AI</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Evaluate AI tools</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Iterative thinking</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Recognize AI harms</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Use AI responsibly</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Use generative AI technology</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1012,3 +1012,15 @@ footer {
         text-align: center;
     }
 }
+/* Badge Cards Container */
+.badge-cards-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.badge-cards-container .badge-box-card {
+    flex: 1 1 calc(50% - 0.75rem);
+    margin-top: 0;
+}
