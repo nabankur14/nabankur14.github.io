@@ -151,5 +151,54 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Badge Details Modal Logic (Prompt Design in Vertex AI)
+    const openVertexBadgeBtn = document.getElementById('open-vertex-badge-modal');
+    const vertexBadgeModalBackdrop = document.getElementById('vertex-badge-modal-backdrop');
+    const closeVertexBadgeBtn = document.getElementById('close-vertex-badge-modal');
+
+    function openVertexBadgeModal() {
+        if (vertexBadgeModalBackdrop) {
+            vertexBadgeModalBackdrop.classList.add('active');
+            vertexBadgeModalBackdrop.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeVertexBadgeModal() {
+        if (vertexBadgeModalBackdrop) {
+            vertexBadgeModalBackdrop.classList.remove('active');
+            vertexBadgeModalBackdrop.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+    }
+
+    if (openVertexBadgeBtn) {
+        openVertexBadgeBtn.addEventListener('click', openVertexBadgeModal);
+        openVertexBadgeBtn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openVertexBadgeModal();
+            }
+        });
+    }
+
+    if (closeVertexBadgeBtn) {
+        closeVertexBadgeBtn.addEventListener('click', closeVertexBadgeModal);
+    }
+
+    if (vertexBadgeModalBackdrop) {
+        vertexBadgeModalBackdrop.addEventListener('click', (e) => {
+            if (e.target === vertexBadgeModalBackdrop) {
+                closeVertexBadgeModal();
+            }
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && vertexBadgeModalBackdrop && vertexBadgeModalBackdrop.classList.contains('active')) {
+            closeVertexBadgeModal();
+        }
+    });
+
     console.log("Portfolio loaded successfully! 🚀");
 });
