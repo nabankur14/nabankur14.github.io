@@ -151,6 +151,55 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Badge Details Modal Logic (Google Prompting Essentials)
+    const openGooglePromptingBadgeBtn = document.getElementById('open-google-prompting-badge-modal');
+    const googlePromptingBadgeModalBackdrop = document.getElementById('google-prompting-badge-modal-backdrop');
+    const closeGooglePromptingBadgeBtn = document.getElementById('close-google-prompting-badge-modal');
+
+    function openGooglePromptingBadgeModal() {
+        if (googlePromptingBadgeModalBackdrop) {
+            googlePromptingBadgeModalBackdrop.classList.add('active');
+            googlePromptingBadgeModalBackdrop.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeGooglePromptingBadgeModal() {
+        if (googlePromptingBadgeModalBackdrop) {
+            googlePromptingBadgeModalBackdrop.classList.remove('active');
+            googlePromptingBadgeModalBackdrop.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+    }
+
+    if (openGooglePromptingBadgeBtn) {
+        openGooglePromptingBadgeBtn.addEventListener('click', openGooglePromptingBadgeModal);
+        openGooglePromptingBadgeBtn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openGooglePromptingBadgeModal();
+            }
+        });
+    }
+
+    if (closeGooglePromptingBadgeBtn) {
+        closeGooglePromptingBadgeBtn.addEventListener('click', closeGooglePromptingBadgeModal);
+    }
+
+    if (googlePromptingBadgeModalBackdrop) {
+        googlePromptingBadgeModalBackdrop.addEventListener('click', (e) => {
+            if (e.target === googlePromptingBadgeModalBackdrop) {
+                closeGooglePromptingBadgeModal();
+            }
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && googlePromptingBadgeModalBackdrop && googlePromptingBadgeModalBackdrop.classList.contains('active')) {
+            closeGooglePromptingBadgeModal();
+        }
+    });
+
     // Badge Details Modal Logic (Prompt Design in Vertex AI)
     const openVertexBadgeBtn = document.getElementById('open-vertex-badge-modal');
     const vertexBadgeModalBackdrop = document.getElementById('vertex-badge-modal-backdrop');

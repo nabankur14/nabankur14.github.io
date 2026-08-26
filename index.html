@@ -109,7 +109,7 @@
             <div class="badge-box-card" id="open-badge-modal" role="button" tabindex="0"
               title="Click to view badge details">
               <div class="badge-box-img-wrap">
-                <img src="assets/certificates/cert_oracle_badge.png" alt="Oracle Certified Agentic AI 2026 Badge"
+                <img src="assets/badges/badge-oracle-agentic-ai.png" alt="Oracle Certified Agentic AI 2026 Badge"
                   class="badge-box-img">
               </div>
               <div class="badge-box-content">
@@ -126,11 +126,28 @@
             <div class="badge-box-card" id="open-google-badge-modal" role="button" tabindex="0"
               title="Click to view badge details">
               <div class="badge-box-img-wrap">
-                <img src="assets/certificates/google-ai-essentials-v1-Badge.png" alt="Google AI Essentials Badge"
+                <img src="assets/badges/badge-google-ai-essentials-v1.png" alt="Google AI Essentials Badge"
                   class="badge-box-img">
               </div>
               <div class="badge-box-content">
                 <h4 class="badge-box-title">Google AI Essentials V1</h4>
+                <p class="badge-box-org">Coursera</p>
+                <div class="badge-box-footer">
+                  <span class="badge-box-expiry">No Expiry</span>
+                  <span class="badge-box-status"><i class="fas fa-check-circle"></i> Verified</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Prompting Essentials Badge Card -->
+            <div class="badge-box-card" id="open-google-prompting-badge-modal" role="button" tabindex="0"
+              title="Click to view badge details">
+              <div class="badge-box-img-wrap">
+                <img src="assets/badges/badge-google-prompting-essentials.png" alt="Google Prompting Essentials Badge"
+                  class="badge-box-img">
+              </div>
+              <div class="badge-box-content">
+                <h4 class="badge-box-title">Google Prompting Essentials</h4>
                 <p class="badge-box-org">Coursera</p>
                 <div class="badge-box-footer">
                   <span class="badge-box-expiry">No Expiry</span>
@@ -716,7 +733,7 @@
           <img src="assets/certificates/cert_rag.png" alt="RAG Certificate" class="cert-img">
           <div class="cert-content">
             <h3>End-to-end RAG Application Development with LangChain and Streamlit</h3>
-            <a href="assets/certificates/cert_rag.png" target="_blank" class="btn-sm">Verified</a>
+            <a href="assets/certificates/cert_rag.png" target="_blank" class="btn-sm">View Credential</a>
           </div>
         </div>
 
@@ -739,6 +756,17 @@
             <a href="https://www.coursera.org/account/accomplishments/specialization/N2HPER201XUU" target="_blank"
               class="btn-sm">View
               Credential</a>
+          </div>
+        </div>
+
+        <!-- 10. Google Prompting Essentials -->
+        <div class="cert-item hidden-up delay-200">
+          <img src="assets/certificates/cert_google_prompting_essentials.png"
+            alt="Google Prompting Essentials Certificate" class="cert-img">
+          <div class="cert-content">
+            <h3>Google Prompting Essentials</h3>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/2UTM39NPIG9P" target="_blank"
+              class="btn-sm">View Credential</a>
           </div>
         </div>
 
@@ -803,7 +831,7 @@
         <div class="badge-modal-body">
           <div class="badge-modal-inner-card">
             <div class="modal-badge-center-img">
-              <img src="assets/certificates/cert_oracle_badge.png" alt="Oracle Certified Agentic AI 2026 Badge">
+              <img src="assets/badges/badge-oracle-agentic-ai.png" alt="Oracle Certified Agentic AI 2026 Badge">
             </div>
 
             <div class="badge-field-group">
@@ -891,7 +919,7 @@
       </div>
     </div>
 
-    <!-- Google AI Badge Details Modal Pop-Up -->
+    <!-- Google AI Essentials Badge Details Modal Pop-Up -->
     <div id="google-badge-modal-backdrop" class="badge-modal-backdrop" aria-hidden="true">
       <div class="badge-modal-container" role="dialog" aria-labelledby="google-modal-title" aria-modal="true">
         <div class="badge-modal-header">
@@ -901,7 +929,7 @@
         <div class="badge-modal-body">
           <div class="badge-modal-inner-card">
             <div class="modal-badge-center-img">
-              <img src="assets/certificates/google-ai-essentials-v1-Badge.png" alt="Google AI Essentials Badge">
+              <img src="assets/badges/badge-google-ai-essentials-v1.png" alt="Google AI Essentials Badge">
             </div>
 
             <div class="badge-field-group">
@@ -986,6 +1014,96 @@
       </div>
     </div>
 
+    <!-- Google Prompting Essentials Badge Details Modal Pop-Up -->
+    <div id="google-prompting-badge-modal-backdrop" class="badge-modal-backdrop" aria-hidden="true">
+      <div class="badge-modal-container" role="dialog" aria-labelledby="google-prompting-modal-title" aria-modal="true">
+        <div class="badge-modal-header">
+          <h3 id="google-prompting-modal-title">Badge Details</h3>
+          <button id="close-google-prompting-badge-modal" class="badge-modal-close"
+            aria-label="Close modal">&times;</button>
+        </div>
+        <div class="badge-modal-body">
+          <div class="badge-modal-inner-card">
+            <div class="modal-badge-center-img">
+              <img src="assets/badges/badge-google-prompting-essentials.png" alt="Google Prompting Essentials Badge">
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Badge Title</label>
+              <h4 class="badge-field-value title-large">Google Prompting Essentials</h4>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Issuing Organization</label>
+              <p class="badge-field-value">Coursera</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Issued To</label>
+              <p class="badge-field-value">Nabankur Ray</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Description</label>
+              <p class="badge-field-value description-text">
+                Those who earn the Google Prompting Essentials Certificate, developed by Google, see more...
+              </p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Issuing Date</label>
+              <p class="badge-field-value">8/22/2026</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Expiration Date</label>
+              <p class="badge-field-value">This credential does not expire</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Credential ID</label>
+              <p class="badge-field-value">a41d91d7-2b9c-4c68-88e5-52bb1a35c773</p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Credential URL</label>
+              <a href="https://www.credly.com/badges/a41d91d7-2b9c-4c68-88e5-52bb1a35c773/public_url" target="_blank"
+                rel="noopener noreferrer" class="badge-field-link">
+                See Badge Details Page
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Verification Status</label>
+              <div>
+                <span class="verification-tag-pill verified-green"><i class="fas fa-check-circle"></i> Verified
+                  Credential</span>
+              </div>
+              <p class="verification-help-text">
+                Issued and verified directly by Coursera. Official credential records can be verified online using the
+                link provided above.
+              </p>
+            </div>
+
+            <div class="badge-field-group">
+              <label class="badge-field-label">Skills <i class="fas fa-info-circle" style="margin-left: 0.2rem;"
+                  title="Verified Skills"></i></label>
+              <div class="badge-skills-flex">
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> AI agent design</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Multimodal Prompting</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Prompt chaining</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Prompt Design</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Prompt evaluation and iteration</span>
+                <span class="badge-skill-tag"><i class="fas fa-check-circle"></i> Responsible AI</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Prompt Design in Vertex AI Badge Details Modal Pop-Up -->
     <div id="vertex-badge-modal-backdrop" class="badge-modal-backdrop" aria-hidden="true">
       <div class="badge-modal-container" role="dialog" aria-labelledby="vertex-modal-title" aria-modal="true">
@@ -1017,7 +1135,10 @@
             <div class="badge-field-group">
               <label class="badge-field-label">Description</label>
               <p class="badge-field-value description-text">
-                Completed the Introductory Prompt Design in Vertex AI skill badge, demonstrating foundational skills in prompt engineering, image analysis, and multimodal generative AI using Google Cloud Vertex AI and Gemini models. Developed practical experience crafting effective prompts, guiding AI-generated outputs, and applying multimodal AI techniques to real-world marketing scenarios.
+                Completed the Introductory Prompt Design in Vertex AI skill badge, demonstrating foundational skills in
+                prompt engineering, image analysis, and multimodal generative AI using Google Cloud Vertex AI and Gemini
+                models. Developed practical experience crafting effective prompts, guiding AI-generated outputs, and
+                applying multimodal AI techniques to real-world marketing scenarios.
               </p>
             </div>
 
@@ -1038,8 +1159,8 @@
 
             <div class="badge-field-group">
               <label class="badge-field-label">Credential URL</label>
-              <a href="https://www.skills.google/public_profiles/cf2fc622-bcc6-45a3-9114-08b7832c5c21/badges/27250131" target="_blank"
-                rel="noopener noreferrer" class="badge-field-link">
+              <a href="https://www.skills.google/public_profiles/cf2fc622-bcc6-45a3-9114-08b7832c5c21/badges/27250131"
+                target="_blank" rel="noopener noreferrer" class="badge-field-link">
                 See Badge Details Page
                 <i class="fas fa-external-link-alt"></i>
               </a>
@@ -1052,7 +1173,8 @@
                   Credential</span>
               </div>
               <p class="verification-help-text">
-                Issued and verified directly by Google Cloud. Official credential records can be verified online using the
+                Issued and verified directly by Google Cloud. Official credential records can be verified online using
+                the
                 link provided above.
               </p>
             </div>
